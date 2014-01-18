@@ -141,7 +141,7 @@ function ptd_admin_bar( $wp_admin_bar ) {
 		$args = array(
 			'id'    => 'edit_description',
 			'title' => 'Edit Description',
-			'href'  => 'http://wordpress.dev/wp-admin/edit.php?page=description&post_type=' . $post_type
+			'href'  => get_bloginfo('url') . '/wp-admin/edit.php?page=description&post_type=' . $post_type
 		);
 	
 		$wp_admin_bar->add_node( $args );

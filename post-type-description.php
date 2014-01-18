@@ -123,7 +123,7 @@ function pta_get_enabled_post_type_array() {
 // It's unlikely that pages will need a description
 function ptd_remove_pages_post_type($post_types) {
 
-    unset($post_types['page']);
+    //unset($post_types['page']);
     return $post_types;
     
 }
@@ -141,7 +141,7 @@ function ptd_admin_bar( $wp_admin_bar ) {
 		$args = array(
 			'id'    => 'edit_description',
 			'title' => 'Edit Description',
-			'href'  => get_bloginfo('url') . '/wp-admin/edit.php?page=description&post_type=' . $post_type
+			'href'  => admin_url() . 'edit.php?page=description&post_type=' . $post_type
 		);
 	
 		$wp_admin_bar->add_node( $args );

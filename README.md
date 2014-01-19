@@ -1,7 +1,7 @@
 Post Type Description
 =====================
 
-Adds the ability to add a description to your post type in your template.
+Adds the ability to add a description to your post type in your theme templates.
 
 ![Overview](http://d7c3hoiply1bq.cloudfront.net/wp-content/uploads/2014/01/Post-Type-Description.png)
 
@@ -15,3 +15,7 @@ Adds the ability to add a description to your post type in your template.
 ```php
 ptd-description();
 ```
+
+## About
+
+Adds the ability to manage content at the top of your post type archive. For example, if you have a books post type and therefore a services archive (archive-books.php) then above the list of books you may want to add some information about books in general.

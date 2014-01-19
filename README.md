@@ -1,4 +1,4 @@
-Post-Type-Description
+Post Type Description
 =====================
 
 Adds the ability to add a description to your post type in your template.

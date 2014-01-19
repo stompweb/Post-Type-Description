@@ -123,7 +123,7 @@ function pta_get_enabled_post_type_array() {
 // It's unlikely that pages will need a description
 function ptd_remove_pages_post_type($post_types) {
 
-    //unset($post_types['page']);
+    unset($post_types['page']);
     return $post_types;
     
 }

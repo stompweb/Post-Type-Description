@@ -20,8 +20,6 @@ ptd-description();
 
 Adds the ability to manage content at the top of your post type archive. For example, if you have a books post type and therefore a services archive (archive-books.php) then above the list of books you may want to add some information about books in general.
 
-## Contribitions
+## Contribute
 
-If you find any bugs or have a suggestion for improving the plugin, please raise these in the [issues](https://github.com/stompweb/Post-Type-Description/issues)
-
-If you can contribute to the code to make it more secure or efficient then please open a pull request.
+If you find any bugs or have a suggestion for improving the plugin, please raise these in the [issues](https://github.com/stompweb/Post-Type-Description/issues). If you can contribute to the code to make it more secure or efficient then please open a pull request.

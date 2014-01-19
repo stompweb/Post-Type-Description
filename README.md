@@ -22,4 +22,6 @@ Adds the ability to manage content at the top of your post type archive. For exa
 
 ## Contribitions
 
-If you find any bugs or have an improvement to the plugin, please raise these in the [issues](/issues)
+If you find any bugs or have a suggestion for improving the plugin, please raise these in the [issues](https://github.com/stompweb/Post-Type-Description/issues)
+
+If you can contribute to the code to make it more secure or efficient then please open a pull request.

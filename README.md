@@ -8,4 +8,8 @@ Adds the ability to add a description to your post type in your template.
 * Activate Plugin
 * Select 'Description' from your Post Type menu (your post type must be public).
 * Enter your description, like you would in a normal page.
-* Add 
+* Add the following function to your archive-post-type.php
+
+```php
+ptd-description();
+```

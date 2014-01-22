@@ -42,7 +42,7 @@ function ptd_manage_description() {
 	?>
 	<h2><?php echo esc_html( $post_type->labels->name ); ?> Description</h2>
 
-	<?php if ($_GET['updated']) { ?>
+	<?php if ( isset( $_GET['updated'] ) && $_GET['updated'] ) { ?>
 
 		<div id="message" class="updated">
 			<p>Description Updated.</p>

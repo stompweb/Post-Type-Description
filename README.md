@@ -13,7 +13,7 @@ Adds the ability to add a description to your post type in your theme templates.
 * Add the following function to your archive-post-type.php
 
 ```php
-ptd-description();
+ptd_description();
 ```
 
 ## About

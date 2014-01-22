@@ -37,7 +37,7 @@ function ptd_manage_description() {
 
 	<h2><?php echo ucfirst($post_type); ?> description</h2>
 
-	<?php if ($_GET['updated']) { ?>
+	<?php if ( isset( $_GET['updated'] ) && $_GET['updated'] ) { ?>
 
 		<div id="message" class="updated">
 			<p>Description Updated.</p>

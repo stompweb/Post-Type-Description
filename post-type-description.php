@@ -32,10 +32,15 @@ add_action('admin_menu', 'ptd_add_submenu_page');
 // Admin page to edit the description
 function ptd_manage_description() {
 
-	$post_type = esc_attr( $_GET['post_type'] ); 
-	$current_description = stripslashes(get_option($post_type . '-description')); ?>
+	if ( empty( $_GET['post_type'] ) )
+		return;
 
-	<h2><?php echo ucfirst($post_type); ?> description</h2>
+	$post_type = get_post_type_object( $_GET['post_type'] ); 
+	
+	$current_description = stripslashes(get_option($post_type->name . '-description')); 
+
+	?>
+	<h2><?php echo esc_html( $post_type->labels->name ); ?> Description</h2>
 
 	<?php if ($_GET['updated']) { ?>
 
@@ -50,7 +55,7 @@ function ptd_manage_description() {
 			<?php wp_editor( $current_description, 'description', $settings = array() ); ?>
 		</div>
 
-		<input type="hidden" name="post_type" value="<?php echo $post_type; ?>" />
+		<input type="hidden" name="post_type" value="<?php echo esc_attr( $post_type->name ); ?>" />
 		
 		<p class="submit">
 			<input class="button-primary" type="submit" name="ptd_update_description" value="Update Description"/>

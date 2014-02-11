@@ -20,7 +20,7 @@ function ptd_add_submenu_page() {
 		$page_title  = $post_type_obj->labels->name . ' description';
 		$menu_title  = 'Description';
 		$capability  = $post_type_obj->cap->edit_posts;
-		$menu_slug	 = 'description';
+		$menu_slug	 = $post_type_obj->name . '-description';
 		$function    = 'ptd_manage_description';
 
 		add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function );

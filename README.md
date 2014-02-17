@@ -16,6 +16,20 @@ Adds the ability to add a description to your post type in your theme templates.
 ptd_description();
 ```
 
+### Filters
+
+You can choose the post types that you want this to be activated on. It's activated on all non built-in public posts types by default but you can use the ptd_enabled_post_types filter, for example if you wanted to exclude the 'products' post type:
+
+```php
+function remove_my_post_type($post_types) {
+
+	unset($post_types['products']);
+    return $post_types;
+    
+}
+add_filter('ptd_enabled_post_types', 'remove_my_post_type');
+```
+
 ## About
 
 Adds the ability to manage content at the top of your post type archive. For example, if you have a books post type and therefore a services archive (archive-books.php) then above the list of books you may want to add some information about books in general.

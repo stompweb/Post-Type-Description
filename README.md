@@ -32,7 +32,7 @@ add_filter('ptd_enabled_post_types', 'remove_my_post_type');
 
 ## About
 
-Adds the ability to manage content at the top of your post type archive. For example, if you have a books post type and therefore a services archive (archive-books.php) then above the list of books you may want to add some information about books in general.
+Adds the ability to manage content at the top of your post type archive. For example, if you have a books post type (archive-books.php) then above the list of books you may want to add some information about books in general.
 
 ## Contribute
 
